@@ -6,8 +6,7 @@ const findMatching = (driversArray, matchName) => {
 
 const fuzzyMatch = (driversArray, firstLetters) => {
     return driversArray.filter(e => {
-        return true
-        // return e.slice(0, firstLetters.length).toLowerCase() === firstLetters.toLowerCase();
+        return e.slice(0, firstLetters.length).toLowerCase() === firstLetters.toLowerCase();
     })
 }
 
